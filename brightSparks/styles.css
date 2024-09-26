@@ -1,0 +1,169 @@
+body {
+    font-family: barlow;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    color: #fad400;
+    background-color: #fad400;}
+
+
+
+* {
+    box-sizing: border-box;
+}  
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 50px 15px;
+    height: 40px;
+} 
+
+.hero-section a {
+    
+    padding-right:0;
+    margin-right: 50px;
+    
+    
+}
+
+img {
+
+    height: 175px;
+    width: 180px;
+    padding-bottom: 50px;}
+
+.hero-content a {
+    border: solid 1px orange;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+}    
+
+header {
+    background-color: rgb(6, 6, 22);
+    height: 150px;
+    padding: 50px 0 0 0;
+    margin-top:0px;
+    align-items: center;
+} 
+
+a {
+    color: #fe7867;
+    text-decoration: none;
+    background-color:  rgb(6, 6, 22);
+}
+
+a:hover {
+    color: rgb(0, 255, 21);
+}    
+    
+main {
+    background-color: #25564b;
+    background-size: cover;
+}    
+
+footer { 
+    margin-top:20px;
+    border-top: solid 3px brown ; 
+}
+
+.hero-section {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+} 
+
+.services-section {
+    margin-bottom: 40px;
+    border-top: 2px solid #fad400;
+    border-bottom: 2px solid #fad400;
+    
+} 
+
+.contact-section {
+    padding:0 10px 10px 10px;
+}
+
+.contact-section .group input,
+.contact-section .group textarea {
+    font-family:sans serif;
+    border: 2px solid orange;
+    background-color: transparent;
+    padding: 10px;
+    outline: none;
+    resize: none;
+    background-color: gray;
+    
+} 
+.contact-section .group {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-section .text{
+    flex: 3;
+    margin-top: 20px;}   
+
+.contact-section form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;}
+
+
+
+button {
+    border-radius: 4px;
+    background: rgb(216, 174, 95);
+}
+
+button:hover {
+    color: yellow;
+    background-color: blue;
+
+}
+
+div .group {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-bottom: 25px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+    font-weight: 300%;
+    font-size: 30px;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 400px; 
+    padding-right: 400px;
+    height: 50px;
+    align-items: center;
+    background-color: rgb(31, 31, 34);       
+
+}
+p {
+    padding-left: 10px;
+}
+
