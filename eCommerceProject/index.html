@@ -3,10 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>GoShop</title>
 </head>
+
 <body>
-<!--The header section-->    
-    
+<!--The header section--> 
+
+    <header>
+        <section class="home-section" id="#home-section">
+
+            <nav class="home-section">
+                <div class="logo">
+                    <img src="./img/goShop_logo.png" height="150px" width="150px">
+                </div class="shop-name">
+                <h1><a href=./index.html>GoShop</a></h1>
+
+                <div class="nav-links">
+                    <a href="#home-section">Home</a>
+                    <a href="#shop-section">Shop</a>
+                    <a href="#contact-section">Contact</a>                   
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    <!--Main section-->
+    <main>
+        <section class="all-product-section">
+            <div class="left">
+
+                <a href="#all-products">All Products</a>
+            </div>
+
+            <div class="right">
+                <div>
+                    <a href="#electronics">Electronics</a>
+                </div>
+                <div>
+                    <a href="#accessories">Accessories</a>
+                </div>
+                <div>
+                    <a href="#computers">Computers</a>
+                </div>
+                <div>
+                    <a href="#other-products">Other Products</a>
+                </div>
+            </div>          
+                
+                    
+            
+             
+        </section>
+        <section class="shop-section" id="shop-section">
+
+            <!--I used the www.fakestoreapi.com image for the products image-->
+               
+            <ul>
+                <li>
+                    <img class="product-samsungTv" alt="image of samsung 49-inch tv"
+                    src="https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg " height="250px" width="230px"
+                    />
+                    <h1>
+                    <!-- Product name -->
+                    Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED
+                    </h1>
+                    <p>
+                    <!-- Product description -->
+                    49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, 
+                    HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE 
+                    and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag
+                    </p>
+                    <p class="price">
+                    <!-- Product price -->
+                    $999.99
+                    </p>
+                    <button><a>Add to Cart</a></button>
+
+                </li>
+                <li>              
+                    <img class="product-sandisk" alt="image sandisk"
+                    src="https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg" height="250" width="230"
+                    />
+                    <h1>
+                    <!-- Product name -->
+                    SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s 
+                    </h1>
+                    <p>
+                    <!-- Product description -->
+                    Easy upgrade for faster boot up, shutdown, application load and response 
+                    (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and 
+                    internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, 
+                    making it ideal for typical PC workloads The perfect balance of performance and 
+                    reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; 
+                    Performance may vary depending upon drive capacity, host device, OS and application.)
+                    </p>
+                    <p class="price">
+                    <!-- Product price -->
+                    $50
+                    </p>
+                    <button><a>Add to Cart</a></button>
+                </li>
+   
+                <li>
+
+                    <img class="product-siliconPower"
+                        alt="image of Silicon power 3D NAND flash"
+                        src=" https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg" height="250" width="230"
+                        />
+                        <h1>
+                        <!-- Product name -->
+                        Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5
+                        </h1>
+                        <p>
+                        <!-- Product description -->
+                        3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. 
+                        The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. 
+                        Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.
+                        </p>
+                        <p class="price">
+                        <!-- Product price -->
+                        $109
+                        </p>
+                        <button><a>Add to Cart</a></button>
+                </li>              
+                
+                <li>
+
+                    <img class="product-acerTv"
+                        alt="image of 21.5-inch ultra-thin tv"
+                        src=" https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg" height="250" width="230"
+                        />
+                        <h1>
+                        <!-- Product name -->
+                        Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin
+                        </h1>
+                        <p>
+                        <!-- Product description -->
+                        21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. 
+                        No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. 
+                        Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz
+                        </p>
+                        <p class="price">
+                        <!-- Product rpice -->
+                        $599
+                        </p>
+                        <button><a>Add to Cart</a></button>
+                </li>
+                
+            </ul>
+        </section>
+        
+        
+    </main>
+
+    <!--Footer section-->
+
+    <footer>
+        <section class="contact-section" id="contact-section">
+            <div class="address">
+                <p><strong>Address:</strong> Plot 5, Frankfurt St, Berlin</p>
+                <p><strong>Telephone:</strong>+49099999999</p>
+                <p><strong>Email:</strong> info@goshop.com</p>
+            </div>
+            
+        </section>
+        <section class="social-media"> 
+            <div class="telegram">
+        
+                <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-telegram"></i> 
+                </a> 
+            </div>
+            <div class="linkedin"></div>
+                <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>   
+                </a> 
+            </div>
+            <div class="x">
+                <a href="x.com" target="_blank" rel="noopener noreferrer" >
+                <i class="fa-brands fa-x-twitter"></i>  
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="instagram.com" target="_blank" rel="noopener noreferrer" >
+                <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <div class="facebook">
+
+                <a href="facebook.com" target="_blank" rel="noopener noreferrer" >
+                <i class="fa-brands fa-facebook"></i>    
+                </a> 
+            </div>
+
+        </section>
+        <p class="copyright">&copy;2024 GoShop.All rights reserved</p>      
+
+    </footer>
+
 </body>
 </html>

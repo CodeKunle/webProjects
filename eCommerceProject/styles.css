@@ -1,0 +1,192 @@
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 16px;
+    color: black;
+    background-color: pink;
+    margin-left:10px ;
+    margin-right: 10px;
+    box-sizing: content-box;
+    
+
+    
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+header {
+    margin: 0;
+}
+
+main{
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    align-items: center;
+    background-color: palevioletred;
+}
+
+@media (max-width:400px) {
+    body{
+    display:flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    color: brown;
+    font-size: 12px;
+    }
+    
+}
+
+li img{
+    border: 3px solid pink;
+    margin-left: 40px;
+}
+
+a{
+    text-decoration: none;
+    margin-right: 37px;
+    
+}
+
+a:hover{
+    color: red;
+}
+
+
+
+li{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-bottom: 20px;
+    gap: 3rem;
+    border-bottom: 10px solid plum;
+    padding-top: 20px;
+    
+
+}
+
+button{
+    
+    margin-top: 0px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    background-color: coral;
+    width: 140px;           /* Set button width */
+    height: 50px;           /* Set button height */
+    text-align: center;     /* Horizontally center the text */
+    line-height: 50px;      /* Match line-height to button height for vertical centering */
+    padding: 0;             /* Remove default padding */
+    font-size: 16px;        /* Optional: Set font size */
+    cursor: pointer; 
+    color: bisque;
+}
+
+button:hover{
+    background-color: tan;
+}
+
+p{
+    display:flex;
+    justify-content: left;
+    font-size: 18px;
+    padding-top: 0px;
+    text-align: justify;
+    width: 1000px;
+    
+}
+
+
+ul {
+    list-style-type: none;
+    display:;
+    flex-direction: ;
+    flex-basis: 1;
+    gap:3rem;
+    
+    
+}
+
+ul li img{
+    padding-top: 5px;
+}
+
+h1{
+    font-size: 20px;
+}
+
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    gap: 3rem;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+.product-image{
+    object-fit: cover;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+}
+
+h3{
+    margin-top: 20px;
+}
+
+.all-product-section {
+    display: flex;
+    justify-content: space-between;
+    background-color: plum;
+    color: white;
+    border: 3px solid white;
+}
+
+.right{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  
+    color: white;
+    align-items: center;
+}
+.left{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 4px;
+
+}
+
+.price{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:purple
+}
+
+.copyright{
+    display: flex;
+    font-size: 14px;
+    margin-left: 200px;
+    margin-bottom: 40px;
+}
