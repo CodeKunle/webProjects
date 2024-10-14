@@ -1,0 +1,266 @@
+*{
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+.body-clothing{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: lavenderblush;
+}
+
+.main-clothing{
+    background-color:  rgb(237, 192, 207);
+}
+
+.body-electronics{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: yellow;
+}
+
+.main-electronics{
+    background-color:  blue;
+}
+
+.logo-clothing{
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+    padding-bottom: 45px;
+    font-size: 48px;
+    font-weight: bold;
+    color: purple;
+}
+
+.logo-electronics{
+    display: flex;
+    justify-content: center;
+    padding-top: 5rem;
+    padding-bottom: 13rem;
+    font-size: 13rem;
+    font-weight: bold;
+    color: blue;
+}
+
+div .nav-links ul{
+    display: flex;
+    justify-content: start;
+    list-style-type: none;
+    text-decoration: none
+}
+
+.menu-lists a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+.menu-lists a{
+    text-decoration: none;
+}
+
+.moving-text {
+    white-space: nowrap;           /* Prevents text from wrapping */
+    display: inline-block;
+    font-size: 24px;
+    animation: moveText 10s linear infinite; /* 10s animation, moves smoothly, loops infinitely */
+}
+
+  @keyframes moveText {
+    0% {
+      transform: translateX(100%); /* Start outside the right side */
+    }
+    100% {
+      transform: translateX(-100%); /* Move to the left outside the viewport */
+    }
+
+  }
+
+.promotion {
+    width: 100%;              /* Set width for the promotion */
+    overflow: hidden;          /* Ensures the text that goes outside the viewport is hidden */ 
+    background-color: aqua;
+    color: red;
+    margin-top: 1rem;
+  }
+  
+.promotion p{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color:  rgb(255, 0, 144);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-top: 15px;   
+}
+
+.image-container li img{
+    width: 30rem;
+    height: 35rem;
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    border: solid 10px wheat;
+    object-fit: cover;
+}
+.image-container li h3, p{
+    text-align: center;
+}
+
+button{
+    border-radius: 1rem;
+    background-color: chocolate;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;       
+}
+
+li button a{
+text-align: center;
+}
+
+button:hover{
+    background-color: burlywood;
+    
+}
+button a:hover{
+    color:blueviolet;
+    text-decoration: none;
+}
+
+button a{
+    color: white;
+    text-decoration: none;
+}
+
+.price{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(255, 0, 144);
+}
+                                                  
+.social-media{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+    margin-top: 50px;
+    gap: 1rem;
+}
+
+.address{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+.product-image{
+    object-fit: cover;
+}
+
+footer p{
+    display: flex;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.copyright{
+    margin-bottom: 10px;
+}
+.main-electronics li p{
+    color: yellow;
+}
+
+.main-electronics li h3{
+    color: yellow;
+}
+
+.main-electronics li .price{
+    color: rgb(0, 255, 204);
+}
+
+
+@media(max-width:320px){
+    body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: antiquewhite;
+    color: brown;
+    font-size: 0.1rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+}   
+
+@media(max-width:768px){
+    body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: paleturquoise;
+    color: blue;
+    font-size: 2rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+} 
+
+@media(max-width:320px){
+    footer{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: paleturquoise;
+    color: blue;
+    font-size: 2rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+} 
+
+@media(max-width:320px){
+    .wrapper{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: paleturquoise;
+    color: blue;
+    font-size: 0.1rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+} 
+    
+@media(max-width:320px){
+    .menu-lists{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: paleturquoise;
+    color: blue;
+    font-size: 0.1rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+} 
+    
+@media(max-width:320px){
+    .header-clothing{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: paleturquoise;
+    color: blue;
+    font-size: 0.1rem;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    }         
+} 
+

@@ -4,27 +4,21 @@ body{
     color: black;
     background-color: pink;
     margin-left:10px ;
-    margin-right: 10px;
-    box-sizing: content-box;
-    
-
-    
-    
+    margin-right: 10px;      
 }
 
 *{
-    padding: 0;
+    padding-left: 10px;
+    padding-right: 10px;
     margin: 0;
-    box-sizing: border-box;
-    
+    box-sizing: border-box;   
 }
 
 header {
     margin: 0;
-}
-
-main{
-
+    background-color: palevioletred;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 nav{
@@ -34,6 +28,7 @@ nav{
     flex-wrap: 1;
     align-items: center;
     background-color: palevioletred;
+    
 }
 
 @media (max-width:400px) {
@@ -53,9 +48,16 @@ li img{
 }
 
 a{
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     margin-right: 37px;
+        
     
+}
+
+button a{
+    margin-left: 30px;
 }
 
 a:hover{
@@ -79,19 +81,19 @@ li{
 }
 
 button{
-    
-    margin-top: 0px;
+    display: flex;
+    justify-content: center;
     margin-bottom: 60px;
     border-radius: 10px;
-    background-color: coral;
-    width: 140px;           /* Set button width */
-    height: 50px;           /* Set button height */
-    text-align: center;     /* Horizontally center the text */
-    line-height: 50px;      /* Match line-height to button height for vertical centering */
-    padding: 0;             /* Remove default padding */
-    font-size: 16px;        /* Optional: Set font size */
+    background-color: coral;                    
+    align-items: center;          
+    padding:0 ;             
+    font-size: 16px;        
     cursor: pointer; 
     color: bisque;
+    max-width: fit-content;
+    
+
 }
 
 button:hover{
@@ -111,8 +113,6 @@ p{
 
 ul {
     list-style-type: none;
-    display:;
-    flex-direction: ;
     flex-basis: 1;
     gap:3rem;
     
