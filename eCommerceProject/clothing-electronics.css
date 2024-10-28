@@ -19,6 +19,8 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     background-color: yellow;
+    padding-left: 10rem;
+    padding-right: 10rem;
 }
 
 .main-electronics{
@@ -39,8 +41,8 @@
     display: flex;
     justify-content: center;
     padding-top: 5rem;
-    padding-bottom: 13rem;
-    font-size: 13rem;
+    padding-bottom: 5rem;
+    font-size: 10rem;
     font-weight: bold;
     color: blue;
 }
@@ -92,7 +94,7 @@ div .nav-links ul{
     color:  rgb(255, 0, 144);
 }
 
-.image-container {
+.product-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -100,7 +102,7 @@ div .nav-links ul{
     margin-top: 15px;   
 }
 
-.image-container li img{
+.product-container li img{
     width: 30rem;
     height: 35rem;
     margin-bottom: 1rem;
@@ -108,7 +110,7 @@ div .nav-links ul{
     border: solid 10px wheat;
     object-fit: cover;
 }
-.image-container li h3, p{
+.product-container li h3, p{
     text-align: center;
 }
 
@@ -191,42 +193,45 @@ footer p{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    background-color: antiquewhite;
+    background-color: blue;
     color: brown;
     font-size: 0.1rem;
-    flex-shrink: 1;
-    flex-wrap: 1;
-    }         
-}   
+    align-items: center;
+    flex-wrap:wrap ;
+    padding-left: 10rem;
+    padding-right: 10rem;
+    
+    /*scroll-margin-right*/  
 
-@media(max-width:768px){
-    body{
+    } 
+    
+    nav .menu-lists{
+    display: block; 
+    
+    
+
+
+    }
+
+    ul li img{
     display:flex;
     justify-content: center;
     flex-direction: column;
-    background-color: paleturquoise;
-    color: blue;
-    font-size: 2rem;
-    flex-shrink: 1;
-    flex-wrap: 1;
-    }         
-} 
+    width: 5rem;
+    height: 6rem;
+    }  
 
-@media(max-width:320px){
     footer{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: paleturquoise;
     color: blue;
-    font-size: 2rem;
-    flex-shrink: 1;
-    flex-wrap: 1;
-    }         
-} 
-
-@media(max-width:320px){
-    .wrapper{
+    font-size: 1rem;   
+    } 
+        
+    .wrapper ul{
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -235,23 +240,18 @@ footer p{
     font-size: 0.1rem;
     flex-shrink: 1;
     flex-wrap: 1;
-    }         
-} 
-    
-@media(max-width:320px){
+    }
+
     .menu-lists{
     display:flex;
     justify-content: center;
     flex-direction: column;
+    flex-wrap: wrap;
     background-color: paleturquoise;
     color: blue;
-    font-size: 0.1rem;
-    flex-shrink: 1;
-    flex-wrap: 1;
-    }         
-} 
-    
-@media(max-width:320px){
+    font-size: 0.1rem;   
+    } 
+
     .header-clothing{
     display:flex;
     justify-content: center;
@@ -259,8 +259,76 @@ footer p{
     background-color: paleturquoise;
     color: blue;
     font-size: 0.1rem;
+    } 
+             
+    .price, h3{
+        font-size: 2.5rem;
+    } 
+    
+    h1 .logo-electronics{font-size: 5px;}
+
+
+@media(max-width:768px){
+    body{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(236, 32, 172);
+    color: blue;
+    font-size: 2rem;
     flex-shrink: 1;
     flex-wrap: 1;
     }         
 } 
+} 
+
+    /*javascript*/
+
+    
+    /*body {
+        font-family: Arial, sans-serif;
+      }*/
+      
+      #product-container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+      }
+      
+      .product-card {
+        border: 3px solid blue;
+        padding: 10px;
+        width: 200px;
+        text-align: center;
+        border-radius: 10px;
+        border-color: blue;
+      }
+      
+      .product-card img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+      }
+      
+      .product-card h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+      
+      .product-card p {
+        margin: 5px 0;
+      }
+
+      .product-card img {
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .product-card img:hover {
+        transform: scale(1.1); /* Scale up to 110% on hover */
+    }
+    
+        
+      
 
