@@ -28,14 +28,30 @@
                     <li class="menu-list-item"><strong><a href="clothing.html">CLOTHINGS</a></strong></li>
                 </ul>
             </nav> 
-        </div>       
+        </div>
+        <div id="modalCart" class="modal-cart">
+            <div class="modal-cart-content">
+              <span class="modal-cart-close">&times;</span>
+              <h1>Cart</h1>
+              <p>check out</p>
+            </div>
+          </div>       
         <div class="promotion">
-            <p class="moving-text">Enjoy 50% Discount On Any Of Your Purchases This October! <strong>Buy Now!</strong></p>
+            <p class="moving-text">Enjoy 50% Discount On Any Of Your Purchases This Month! <strong>Buy Now!</strong></p>
         </div>        
     </header>
 
     <main class="main-electronics">
         <section class="shop-section">
+            <div class="products--sorting">
+                <label for="sort">Sort by price: </label>
+                <select id="sort" class="sort--dropdown">
+                  <option value="asc">Ascending </option>
+                  <option value="desc">Descending </option>
+                </select>
+            </div>
+
+            
             <ul class="product-container">
                 
                     <li class="shop-item" id=1>
@@ -44,8 +60,8 @@
                         <h3>Canon Camera</h3>
                         <p>Canon Systemkamera »EOS R50«, 24,2 MP, Bluetooth-WLAN</p>
                         <p class="price">$350</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')" class="product--buy">
+                            <a id="addToCart" href="">Add To Cart</a>
                         </button>
                     </li>
                     <li class="shop-item" id=2>
@@ -54,8 +70,8 @@
                         <h3>Samsung CCTV Camera</h3>
                         <p>Smart Camera Home WIFI Security Surveillance Camera,<br> Two Way Audio 360 Degree Smart Au</p>
                         <p class="price">$120</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')">
+                            <a id="addToCart" href="#cart">Add To Cart</a>
                         </button>
                     </li>
                     <li class="shop-item" id=3>
@@ -63,8 +79,8 @@
                         src="img/fan.jpg"/>
                         <h3>Regency Fan</h3>
                         <p class="price">$11.99</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')">
+                            <a id="addToCart" href="">Add To Cart</a>
                         </button>
     
                     </li>
@@ -73,8 +89,8 @@
                         src="img/headphones.jpg"/>
                         <h3>Marshal Headphone</h3>
                         <p class="price">$25</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')">
+                            <a id="addToCart" href="">Add To Cart</a>
                         </button>
                     </li>
                 
@@ -85,8 +101,8 @@
                         <h3>Thermometer</h3>
                         <p></p>
                         <p class="price" >$35</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')">
+                            <a id="addToCart" href="">Add To Cart</a>
                         </button>
                     </li>
                     <li class="shop-item" id=6>
@@ -95,8 +111,8 @@
                         <h3>Sony Walkman</h3>
                         <p></p>
                         <p class="price">$30</p>
-                        <button>
-                            <a href="">Add To Cart</a>
+                        <button onclick="alert('Item Added')">
+                            <a class="addToCart" href="">Add To Cart</a>
                         </button>
                     </li>
                  

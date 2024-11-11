@@ -282,12 +282,14 @@ footer p{
 } 
 } 
 
-    /*javascript*/
-
-    
+     
     /*body {
         font-family: Arial, sans-serif;
       }*/
+
+
+
+      /*javascript*/
       
       #product-container {
         display: flex;
@@ -322,12 +324,27 @@ footer p{
       }
 
       .product-card img {
-        transition: transform 0.3s ease; /* Smooth transition */
+        transition: transform 0.3s ease; 
     }
     
     .product-card img:hover {
-        transform: scale(1.1); /* Scale up to 110% on hover */
+        transform: scale(1.1); 
     }
+
+    /* Styling For sorting */
+    
+select{
+    width: 10em;
+    height: 2.5em;
+    border-radius: 2px;
+    border: 3px solid yellow;
+    border-top: 4px;
+}
+
+label{
+    color: white;
+}
+
     
         
       
