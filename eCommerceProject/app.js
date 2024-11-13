@@ -126,77 +126,74 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  //adding product to cart
+
+  //Adding product to cart
 
   document.addEventListener("DOMContentLoaded", () => {
-    const modal = document.getElementById("modalCart");
-    const cartLink = document.getElementById("cartLink");
-    const closeBtn = document.getElementsByClassName("modal-cart-close")[0];
-    const cartItems = [];
-    const cartDisplay = document.querySelector(".modal-cart-content p");
+    // Cart array to hold products
+    const cart = [];
   
-    cartLink.onclick = function () {
-      modal.style.display = "block";
-      setTimeout(() => {
-        modal.classList.add("show");
-      }, 10);
-      updateCartDisplay();
-    };
+    // Get elements
+    const cartModal = document.getElementById("cartModal");
+    const cartButton = document.getElementById("cartButton");
+    const closeBtn = document.querySelector(".close-btn");
+    const cartItemsDiv = document.getElementById("cartItems");
   
-    closeBtn.onclick = function () {
-      modal.classList.remove("show");
-      setTimeout(() => {
-        modal.style.display = "none";
-      }, 300);
-    };
-  
-    window.onclick = function (event) {
-      if (event.target == modal) {
-        modal.classList.remove("show");
-        setTimeout(() => {
-          modal.style.display = "none";
-        }, 300);
-      }
-    };
-  
-    const addToCartButtons = document.querySelectorAll(".product--buy");
-    addToCartButtons.forEach((button) => {
-      button.addEventListener("click", (event) => {
-        const product = event.target.closest(".product-container");
-        const productName = product.querySelector(product.name).textContent;
-        const productPrice = product.querySelector(".product--price").textContent;
-  
-        cartItems.push({
-          name: productName,
-          price: productPrice,
-        });
-  
-        displayConfirmation(productName);
-        updateCartDisplay();
-      });
-    });
-  
-    function updateCartDisplay() {
-      if (cartItems.length === 0) {
-        cartDisplay.textContent = "Your cart is empty.";
+    // Function to display cart items
+    function displayCartItems() {
+      if (cart.length === 0) {
+        cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
       } else {
-        cartDisplay.innerHTML =
-          "<ul>" +
-          cartItems
-            .map((item) => `<li>${item.name} - ${item.price}</li>`)
-            .join("") +
-          "</ul>";
+        cartItemsDiv.innerHTML = "<ul>" + cart.map(product => `<li>${product.name} - ${product.price}</li>`).join('') + "</ul>";
       }
     }
   
-    function displayConfirmation(productName) {
+    // Event listener for "View Cart" button
+    cartButton.addEventListener("click", () => {
+      displayCartItems();
+      cartModal.style.display = "block";
+    });
+  
+    // Close modal when close button is clicked
+    closeBtn.addEventListener("click", () => {
+      cartModal.style.display = "none";
+    });
+  
+    // Close modal when clicking outside of modal content
+    window.onclick = (event) => {
+      if (event.target == cartModal) {
+        cartModal.style.display = "none";
+      }
+    };
+  
+    // Add to Cart functionality
+    document.querySelectorAll(".add-to-cart").forEach(button => {
+      button.addEventListener("click", (event) => {
+        const productDiv = event.target.closest(".shop-item");
+        const productName = productDiv.getAttribute("data-name");
+        const productPrice = parseFloat(productDiv.getAttribute("data-price")).toFixed(2);
+  
+        // Add the product to the cart
+        cart.push({ name: productName, price: productPrice });
+  
+        // Show confirmation message
+        showConfirmation(productName);
+  
+        // Update cart items in modal
+        displayCartItems();
+      });
+    });
+  
+    // Function to show confirmation message
+    function showConfirmation(productName) {
       const confirmation = document.createElement("div");
-      confirmation.className = "confirmation-message";
-      confirmation.textContent = `${productName} has been added to the cart.`;
+      confirmation.className = "item-added";
+      confirmation.textContent = `${productName} added to cart.`;
       document.body.appendChild(confirmation);
   
       setTimeout(() => {
         confirmation.remove();
-      }, 3000);
+      }, 2000); // Remove after 2 seconds
     }
   });
+  

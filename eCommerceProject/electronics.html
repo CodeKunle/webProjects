@@ -27,15 +27,14 @@
                     <li class="menu-list-item"><strong><a href="#">COMPUTER</a></strong></li>
                     <li class="menu-list-item"><strong><a href="clothing.html">CLOTHINGS</a></strong></li>
                 </ul>
+
+                <!-- Cart Button to Open Modal -->
+                <div>
+                    <button id="cartButton">View Cart <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    </button></div>
             </nav> 
         </div>
-        <div id="modalCart" class="modal-cart">
-            <div class="modal-cart-content">
-              <span class="modal-cart-close">&times;</span>
-              <h1>Cart</h1>
-              <p>check out</p>
-            </div>
-          </div>       
+            
         <div class="promotion">
             <p class="moving-text">Enjoy 50% Discount On Any Of Your Purchases This Month! <strong>Buy Now!</strong></p>
         </div>        
@@ -54,65 +53,69 @@
             
             <ul class="product-container">
                 
-                    <li class="shop-item" id=1>
+                    <li class="shop-item" id=1 data-name="Canon Camera" data-price="350.00">
                         <img class="canon-camera" alt="canon camera" 
                         src="img/camera.jpg"/>
                         <h3>Canon Camera</h3>
                         <p>Canon Systemkamera »EOS R50«, 24,2 MP, Bluetooth-WLAN</p>
                         <p class="price">$350</p>
-                        <button onclick="alert('Item Added')" class="product--buy">
-                            <a id="addToCart" href="">Add To Cart</a>
+                        <button 
+                    class="add-to-cart" onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
                     </li>
-                    <li class="shop-item" id=2>
+                    <li class="shop-item" id=2 data-name="cctv-camera" data-price="120.00">
                         <img class="cctv-camera" alt="cctv camera" 
                         src="img/cctv-camera.jpg"/>
                         <h3>Samsung CCTV Camera</h3>
                         <p>Smart Camera Home WIFI Security Surveillance Camera,<br> Two Way Audio 360 Degree Smart Au</p>
                         <p class="price">$120</p>
-                        <button onclick="alert('Item Added')">
-                            <a id="addToCart" href="#cart">Add To Cart</a>
+                        <button class="add-to-cart" 
+                        onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
                     </li>
-                    <li class="shop-item" id=3>
+                    <li class="shop-item" id=3 data-name="Fan" data-price="11.99">
                         <img class="fan" alt="fan" 
                         src="img/fan.jpg"/>
                         <h3>Regency Fan</h3>
                         <p class="price">$11.99</p>
-                        <button onclick="alert('Item Added')">
-                            <a id="addToCart" href="">Add To Cart</a>
+                        <button class="add-to-cart" onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
     
                     </li>
-                    <li class="shop-item" id=4>
+                    <li class="shop-item" id=4 data-name="Headphone" data-price="25.00">
                         <img class="headphones" alt="headphones" 
                         src="img/headphones.jpg"/>
                         <h3>Marshal Headphone</h3>
                         <p class="price">$25</p>
-                        <button onclick="alert('Item Added')">
-                            <a id="addToCart" href="">Add To Cart</a>
+                        <button class="add-to-cart"
+                        onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
                     </li>
                 
       
-                    <li class="shop-item" id=5>
+                    <li class="shop-item" id=5 data-name="Thermometer" data-price="35.00">
                         <img class="thermometer" alt="thermometer" 
                         src="img/thermometer.png"/>
                         <h3>Thermometer</h3>
                         <p></p>
                         <p class="price" >$35</p>
-                        <button onclick="alert('Item Added')">
-                            <a id="addToCart" href="">Add To Cart</a>
+                        <button class="add-to-cart" onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
                     </li>
-                    <li class="shop-item" id=6>
+                    <li class="shop-item" id=6 data-name="Walkman" data-price="30.00">
                         <img class="wallkman" alt="wallkman" 
                         src="img/wallkman.jpg"/>
                         <h3>Sony Walkman</h3>
                         <p></p>
                         <p class="price">$30</p>
-                        <button onclick="alert('Item Added')">
-                            <a class="addToCart" href="">Add To Cart</a>
+                        <button class="add-to-cart"
+                        onclick="alert('Item Added')">
+                            Add To Cart
                         </button>
                     </li>
                  
@@ -127,7 +130,20 @@
     <div id="product-container">
 
     </div>
-    
+
+    <!-- Cart Modal -->
+
+<div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h2>Your Cart</h2>
+      <div id="cartItems">
+        <p>Your cart is empty.</p>
+      </div>
+    </div>
+  </div>
+
+  
     <footer class="footer-electronics">
         
         <section class="social-media"> 
@@ -171,6 +187,7 @@
         <p class="copyright">&copy;2024 eShops.All rights reserved</p>      
 
     </footer>
+    
     <script src="app.js"></script>
 </body>
 </html>
