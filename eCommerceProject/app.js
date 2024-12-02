@@ -4,21 +4,25 @@ const products=[
         name: 'Canon Camera', 
         price: "$350", 
         image: "img/camera.jpg", 
-        description: 'Canon Systemkamera EOS R50, 24,2 MP, Bluetooth-WLAN'
+        description: 'Canon Systemkamera EOS R50, 24,2 MP, Bluetooth-WLAN',
+        quantity: 1
     },
     {
         id:2 ,
         name: 'Samsung CCTV Camera', 
         price: "$120", 
         image: "img/cctv-camera.jpg" , 
-        description:'Smart Camera Home WIFI Security Surveillance Camera'},
-
+        description:'Smart Camera Home WIFI Security Surveillance Camera'
+        
+      },
+        
     {
         id:3 ,
         name: 'Regency Fan', 
         price:"$11.99", 
         image: "img/fan.jpg", 
         description: 'Effective fan'
+        
     },
     {
         id:4 ,
@@ -26,6 +30,7 @@ const products=[
         price: "$25", 
         image: "img/headphones.jpg" , 
         description: 'Head phone'
+        
     },
 
     {
@@ -34,13 +39,16 @@ const products=[
         price: "$35", 
         image: "img/thermometer.png", 
         description: 'Very sensitive thermometer'
+        
     },
     {
         id:6 ,
         name: 'Wallkman', 
         price: "$30", 
         image: "img/wallkman.jpg", 
-        description: 'Nice wallkman'}
+        description: 'Nice wallkman'
+        
+      }
     ];
 
 
@@ -144,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
       if (cart.length === 0) {
         cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
       } else {
-        cartItemsDiv.innerHTML = "<ul>" + cart.map(product => `<li>${product.name} - ${product.price}</li>`).join('') + "</ul>";
+        cartItemsDiv.innerHTML = "<ul>" + cart.map(product => `<li>${product.name} - $${product.price}</li>`).join('') + "</ul>";
       }
     }
   
@@ -172,9 +180,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const productDiv = event.target.closest(".shop-item");
         const productName = productDiv.getAttribute("data-name");
         const productPrice = parseFloat(productDiv.getAttribute("data-price")).toFixed(2);
+        
+        
   
         // Add the product to the cart
-        cart.push({ name: productName, price: productPrice });
+        cart.push({ name: productName, price: productPrice});
   
         // Show confirmation message
         showConfirmation(productName);

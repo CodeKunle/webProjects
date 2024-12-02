@@ -1,6 +1,1 @@
-let a = 10;
-let b = 20;
-console.log(a*b);
-
-console.log(a===b);
-code=0;
+function alarm(){ window.alert("hello world")}; setTimeout(alarm, 2000)

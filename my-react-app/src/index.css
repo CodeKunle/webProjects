@@ -1,0 +1,61 @@
+
+:root {
+  --facebook-blue: #1877F2; /* Facebook's primary color */
+}
+
+
+
+.campagn{
+  flex: 30%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  border: 1px solid hwb(60 17% 83% / 0.333);
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px hsla(270, 2%, 21%, 0.199);
+
+}
+.campagn:hover{
+  transform: translateX(30px);
+  cursor: pointer;
+  color: var(--facebook-blue);
+  box-shadow: 10px 10px 5px hsla(270, 93%, 45%, 0.199);;
+
+}
+
+
+.banner{
+  flex: 50%;
+  width: 40%;
+  height: 20%;
+  padding: 30px;
+  
+}
+
+h2{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+p{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;;}
+
+h1:hover{
+  transform: translateX(7px);
+  color: var(--facebook-blue);
+}
+
+.student{
+  border: 1px solid hsla(0, 0%, 50%);
+  padding: 0;
+  width:fit-content;
+  margin: auto;
+  
+}
+
+.student p{
+  padding: 0;
+  margin: 0 0 0 0;
+  margin-left: 0;
+  margin-right: 0;
+}

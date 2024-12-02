@@ -376,8 +376,8 @@ label{
     float: right;
     margin-top: 20px;
     border: 5px solid blue;
-    background-color: yellowgreen
-    ;
+    background-color: yellowgreen;
+    width: 80px;
   }
   
   .products {
