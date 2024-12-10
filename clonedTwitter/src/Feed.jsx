@@ -9,10 +9,57 @@ import Tweet from './Tweet'
 function Feed() {
   return (
     <div className='feed'>
+      
         <Header className='feed-header'/>
+      <div >
         <TweetInput/>
         <Tweet/>
-        
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+        <h3>eeee</h3>
+
+        <h3>eeee</h3>
+
+
+      </div>  
         
         
        
