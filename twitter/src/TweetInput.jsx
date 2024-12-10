@@ -10,6 +10,7 @@ function TweetInput({ addTweet }) {
     };
   
     return (
+      
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -19,6 +20,7 @@ function TweetInput({ addTweet }) {
         />
         <button type="submit" class="post-button">Tweet</button>
       </form>
+      
     )
 }
 

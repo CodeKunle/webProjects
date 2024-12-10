@@ -1,13 +1,12 @@
 import React from 'react'
 
-function SideBa() {
+function Profile() {
   return (
     <div>
-      <p>zzzz</p>
+        
       
     </div>
   )
 }
 
-export default SideBa
-
+export default Profile

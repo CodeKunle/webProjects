@@ -11,7 +11,6 @@ import XIcon from '@mui/icons-material/X';
 import FlashOnIcon from '@mui/icons-material/FlashOn';
 import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
 import PendingOutlinedIcon from '@mui/icons-material/PendingOutlined';
-
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 
@@ -22,10 +21,10 @@ function Sidebar() {
   return (
     <div className = "sidebar">
          {/*twitter icon*/}
-         <XIcon/>
+        <XIcon/>
 
         {/*SidebarOption*/}
-        <SidebarOption active Icon={HomeOutlinedIcon}  text="Home" />
+        <SidebarOption Icon={HomeOutlinedIcon}  text="Home" />
         <SidebarOption Icon={SearchIcon}  text="Explore" />
         <SidebarOption Icon={NotificationsNoneIcon}  text="Notifications" />
         <SidebarOption Icon={MailOutlineIcon}  text="Messages" />

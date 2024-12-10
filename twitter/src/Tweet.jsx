@@ -1,22 +1,7 @@
-import React, {useState} from 'react'
-function Tweet(){
-
-    const Tweet = ({ content }) => {
-      return (
-        <li>
-          <p>{content}</p>
-        </li>
-      )
-    }
-    }
-    export default Tweet;
+import React from 'react'
 
 
-
-
-
-
-/*function Tweet() {
+function Tweet() {
   return (
     <div>
       
@@ -24,4 +9,4 @@ function Tweet(){
   )
 }
 
-export default Tweet*/
+export default Tweet

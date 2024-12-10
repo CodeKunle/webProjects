@@ -1,0 +1,132 @@
+.app{
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+/* Sidebar styling*/
+
+.sidebar{
+    
+    flex: 0.3;
+    margin-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+.sidebar-twitterIcon{
+    
+    padding-left: 10px;
+    font-size: 30px !important;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.post-button{
+    border-radius: 30px;
+    background-color: hsl(180, 5%, 4%);
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 190px;
+    height: 40px;
+
+}
+
+
+/* SidebarOption styling*/
+
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebarOption:hover {
+    background-color: hsl(0, 5%, 84%);
+    border-radius: 30px;
+    width: fit-content;
+    transition: color 100ms ease-out;
+  }
+  
+.sidebarOption > .MuiSvgIcon-root {
+    padding: 20px;
+  }
+  
+.sidebarOption > h2 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+  }
+  
+.feed{
+    flex: 0.4;
+    min-width: fit-content;
+    overflow-y: scroll;
+    border-right: 1px solid white;
+    
+}
+    /* Hide scrollbar for Chrome, Safari and Opera */
+.feed::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+.feed{
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+
+}
+.feed-header{
+    
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
+
+.widget{
+    flex: 0.3;
+    margin-top: 60px;
+   
+}
+
+/*Styling InputBox*/
+
+.tweetInput  {
+  flex: 1;
+  margin-left: 20px;
+  font-size: 20px;
+  border: none;
+}
+
+.tweetBox {
+    padding-bottom: 10px;
+    padding-right: 10px;
+    
+}
+
+.inputButton{
+    border-radius: 120px;
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+    border-color: gray;
+    height: 30px;
+    width: 60px;
+}
+
+.inputButton:hover{
+    cursor: pointer;
+    background-color: rgb(128, 128, 126);
+}
+
+.tweetBox > form {
+    display: flex;
+    flex-direction: column;
+    
+}

@@ -1,5 +1,6 @@
 // Tweet component: Tweet.jsx
-import React from 'react';
+import React from 'react'
+import App from './App'
 
 function Tweet(){
 

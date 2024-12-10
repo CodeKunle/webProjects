@@ -3,11 +3,14 @@ import Tweet from './Tweet';
 import TweetInput from './TweetInput';
 
 
-function TweetList(){
+function TweetList(props){
     return (
-      <ul>
+      <div>
+        {props.tweets.map((prop) => (
+        <Tweet key={postMessage.id} title={post.title} content={post.content} />
+        ))}
         
-      </ul>
+      </div>
       
     );
   };
