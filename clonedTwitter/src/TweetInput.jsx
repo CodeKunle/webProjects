@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+/*import React, { useState } from 'react';
 
 const TweetInput = ({ addTweet }) => {
   const [tweet, setTweet] = useState('');
@@ -28,5 +28,28 @@ const TweetInput = ({ addTweet }) => {
 
 
 
-export default TweetInput;
+export default TweetInput;*/
 
+import * as React from 'react';
+import Avatar from '@mui/material/Avatar'; 
+import Button from '@mui/material/Button';
+
+function TweetInput(){
+    return(
+        <div>
+            <form>
+                <div>
+                    
+                    <Avatar src=" https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js" className='custom-avatar' />
+                    <input 
+                    type = "text"
+                    placeholder="what's happening?"/>
+                </div>
+                <Button variant="text">Tweet</Button>
+            </form>
+        </div>
+    );
+}
+
+
+export default TweetInput;

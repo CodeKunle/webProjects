@@ -126,6 +126,12 @@
     
 }
 
+.custom-avatar {
+    background-color: rgb(222, 171, 222);
+    
+  }
+  
+
 .inputButton{
     border-radius: 120px;
     background-color: gray;
