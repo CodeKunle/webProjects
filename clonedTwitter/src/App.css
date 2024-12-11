@@ -211,3 +211,20 @@
 .tweet-avatar {
     padding: 10px;
 }
+
+.widget-input{
+    display: flex;
+    align-items: flex;
+    background-color: ;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+.widget-input > input{
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(234, 241, 241);
+
+}
