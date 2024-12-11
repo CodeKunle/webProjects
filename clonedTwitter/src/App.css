@@ -34,7 +34,9 @@
     margin-left: 10px;
     margin-bottom: 10px;
     margin-top: 40px;
+    color: purple
 }
+
 
 .post-button{
     border-radius: 30px;
@@ -114,36 +116,41 @@
 /*Styling InputBox*/
 
 .tweetInput  {
+  display: flex;  
   flex: 1;
   margin-left: 20px;
   font-size: 20px;
   border: none;
+  
 }
 
 .tweetBox {
     padding-bottom: 10px;
-    padding-right: 10px;
-    
+    padding-right: 10px;   
+}
+  
+.tweetInput > input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
 }
 
-.custom-avatar {
-    background-color: rgb(222, 171, 222);
-    
-  }
-  
-
 .inputButton{
-    border-radius: 120px;
-    background-color: gray;
-    color: white;
-    font-weight: bold;
-    border-color: gray;
-    height: 30px;
-    width: 60px;
+  background-color: black;
+  color: white;
+  font-weight: 900 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  width: 80px;
+  height: 40px !important;
+  margin-top: 20px !important;
+  margin-left: auto !important;
 }
 
 .inputButton:hover{
     cursor: pointer;
+    color: aliceblue;
     background-color: rgb(128, 128, 126);
 }
 
@@ -151,4 +158,56 @@
     display: flex;
     flex-direction: column;
     
+}
+
+.tweet{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    background-color: rgb(225, 221, 225);
+}
+
+.tweet-body {
+    flex: 1;
+    padding: 10px;
+}
+
+.tweet-body > img {
+    border-radius: 20px;
+    width: 100%;
+    
+}
+
+.tweet-headerText > h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.tweet-headerDescription {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.tweet-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    
+}
+
+.post-badge{
+    font-size: 8px;
+    color: rgb(0, 149, 255);
+
+}
+
+.tweet-span {
+    font-weight: 600;
+    font-size: 12px;
+    color: gray;
+    
+}
+
+.tweet-avatar {
+    padding: 10px;
 }

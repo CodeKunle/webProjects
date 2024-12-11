@@ -33,19 +33,23 @@ export default TweetInput;*/
 import * as React from 'react';
 import Avatar from '@mui/material/Avatar'; 
 import Button from '@mui/material/Button';
+import Stack from '@mui/material/Stack';
+import { deepOrange, deepPurple } from '@mui/material/colors';
+
 
 function TweetInput(){
     return(
-        <div>
+        <div className='tweetBox'>
             <form>
-                <div>
-                    
-                    <Avatar src=" https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js" className='custom-avatar' />
+                <div className='tweetInput'>
+                    <Stack direction="row" spacing={2}>                      
+                        <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>                        
+                    </Stack>
                     <input 
                     type = "text"
                     placeholder="what's happening?"/>
                 </div>
-                <Button variant="text">Tweet</Button>
+                <Button variant="text" class='inputButton'>Tweet</Button>
             </form>
         </div>
     );

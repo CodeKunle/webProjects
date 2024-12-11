@@ -14,51 +14,11 @@ function Feed() {
       <div >
         <TweetInput/>
         <Tweet/>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-        <h3>eeee</h3>
-
-        <h3>eeee</h3>
-
-
+        <Tweet/>
+        <Tweet/>
+        <Tweet/>
+        <Tweet/>
+        <Tweet/>
       </div>  
         
         
