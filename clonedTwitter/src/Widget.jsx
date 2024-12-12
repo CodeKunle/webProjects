@@ -23,9 +23,14 @@ function Widget() {
           screenName="javaScript Daily"
           options={{ height: 400 }}
         />
+
+        <TwitterShareButton
+          url={"https://facebook.com/cleverprogrammer"}
+          options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
+        />
       </div>
     </div>
-  )
+  );
 }
 
 export default Widget

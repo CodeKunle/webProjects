@@ -30,14 +30,34 @@ const TweetInput = ({ addTweet }) => {
 
 export default TweetInput;*/
 
-import * as React from 'react';
+import React, {useState} from 'react';
 import Avatar from '@mui/material/Avatar'; 
 import Button from '@mui/material/Button';
 import Stack from '@mui/material/Stack';
 import { deepOrange, deepPurple } from '@mui/material/colors';
+import db from './firebase';
+
 
 
 function TweetInput(){
+    const [tweetMessage, setTweetMessage] = useState("");
+    const [tweetImage, setTweetImage] = useState("");
+    const sendTweet = e =>{
+    e.preventDefault();
+
+    db.posts('post').add({
+        displayName:'Ben Casey',
+        username:'Benc',
+        verified: true,
+        text: tweetMessage,
+        /*image: tweetImage,*/
+        avatar:'https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js'
+        
+    });
+    setTweetMessage("");
+    setTweetImage("");
+
+    }
     return(
         <div className='tweetBox'>
             <form>
@@ -46,9 +66,22 @@ function TweetInput(){
                         <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>                        
                     </Stack>
                     <input 
+                    onChange={e =>setTweetMessage(e.target.value)}
+                    value={tweetMessage}
+                    placeholder="what's happening?"
                     type = "text"
-                    placeholder="what's happening?"/>
+
+
+                   />
                 </div>
+                <input
+                value={tweetImage}
+                onChange={e =>setTweetImage(e.target.value)}
+                className='tweetBox-imageInput'
+                placeholder="what's happening?" 
+                type = "text"
+                
+                />
                 <Button variant="text" class='inputButton'>Tweet</Button>
             </form>
         </div>

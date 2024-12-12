@@ -1,16 +1,11 @@
-/*import React from 'react';
-import Tweet from './Tweet';
+import React from 'react'
 
-function TweetList ({ tweets }){
+function TweetList() {
   return (
     <div>
-        <ul>
-          {tweets.map((tweet, index) => (
-            <Tweet key={index} content={tweet} />
-))}
-        </ul>
-    </div>    
-  );
-};
+      
+    </div>
+  )
+}
 
-export default TweetList;*/
+export default TweetList
