@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {forwardRef} from 'react'
 import Avatar from '@mui/material/Avatar'; 
 import VerifiedIcon from '@mui/icons-material/Verified';
 
@@ -8,22 +8,22 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import TurnedInNotOutlinedIcon from '@mui/icons-material/TurnedInNotOutlined';
 import SignalCellularAltOutlinedIcon from '@mui/icons-material/SignalCellularAltOutlined';
 
-function Tweet(
-    { displayName, username, verified, text, image, avatar }){
+const Tweet = forwardRef(
+    ({ displayName, username, verified, text, image, avatar }, ref)=>{
       return (
-        <div className="tweet">
+        <div className="tweet" ref={ref}>
           <div className="tweet-avatar">
-            <Avatar src="https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js" />
+            <Avatar src={avatar} />
           </div>
           <div className="tweet-body">
             <div className="tweet-header">
               <div className="tweet-headerText">
                 <h3>
-                  Steve ReDi{""}
+                  {displayName}{""}
                   <span className="tweet-span">
-                    < VerifiedIcon className="post-badge" />
+                    {verified && <VerifiedIcon className="post-badge" />} @ {username}
                   </span>
-                   steveRedi
+                   
                 </h3>
               </div>
               <div className="tweet-headerDescription">
@@ -38,11 +38,12 @@ function Tweet(
             <FavoriteBorderOutlinedIcon fontSize="small" />
             <TurnedInNotOutlinedIcon fontSize="small" />
             < SignalCellularAltOutlinedIcon fontSize="small"/>
-          </div>
+            </div>
           </div>
         </div>
       );
     }
+    );
   
 
 export default Tweet;

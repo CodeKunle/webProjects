@@ -45,7 +45,7 @@ function TweetInput(){
     const sendTweet = e =>{
     e.preventDefault();
 
-    db.posts('post').add({
+    db.posts('posts').add({
         displayName:'Ben Casey',
         username:'Benc',
         verified: true,
@@ -54,6 +54,7 @@ function TweetInput(){
         avatar:'https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js'
         
     });
+    
     setTweetMessage("");
     setTweetImage("");
 

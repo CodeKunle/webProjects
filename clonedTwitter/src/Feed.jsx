@@ -42,7 +42,7 @@ function Feed() {
         <FlipMove>
         {posts.map((post) => (
           <Tweet
-            
+            key={post.text}
             displayName={post.displayName}
             username={post.username}
             verified={post.verified}
@@ -51,7 +51,7 @@ function Feed() {
             
           />
         ))}
-      </FlipMove>
+        </FlipMove>
         <Tweet/>
         <Tweet/>
         
