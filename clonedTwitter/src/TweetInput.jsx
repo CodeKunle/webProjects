@@ -42,6 +42,7 @@ import db from './firebase';
 function TweetInput(){
     const [tweetMessage, setTweetMessage] = useState("");
     const [tweetImage, setTweetImage] = useState("");
+
     const sendTweet = e =>{
     e.preventDefault();
 
@@ -50,7 +51,7 @@ function TweetInput(){
         username:'Benc',
         verified: true,
         text: tweetMessage,
-        /*image: tweetImage,*/
+        image: tweetImage,
         avatar:'https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js'
         
     });
@@ -62,28 +63,29 @@ function TweetInput(){
     return(
         <div className='tweetBox'>
             <form>
-                <div className='tweetInput'>
-                    <Stack direction="row" spacing={2}>                      
-                        <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>                        
-                    </Stack>
-                    <input 
+                <div className='tweetInput'>                                        
+                <Avatar sx={{ bgcolor: deepOrange[500] }}>N</Avatar>                        
+                <input 
                     onChange={e =>setTweetMessage(e.target.value)}
                     value={tweetMessage}
                     placeholder="what's happening?"
                     type = "text"
-
-
-                   />
+                />                       
                 </div>
+
                 <input
-                value={tweetImage}
-                onChange={e =>setTweetImage(e.target.value)}
-                className='tweetBox-imageInput'
-                placeholder="what's happening?" 
-                type = "text"
-                
+                    value={tweetImage}
+                    onChange={e =>setTweetImage(e.target.value)}
+                    className='tweetBox-imageInput'
+                    placeholder="what's happening?" 
+                    type = "text"               
                 />
-                <Button variant="text" class='inputButton'>Tweet</Button>
+
+                <Button 
+                    onClick={sendTweet}
+                    type="submit" 
+                    className='inputButton'>Tweet
+                </Button>
             </form>
         </div>
     );

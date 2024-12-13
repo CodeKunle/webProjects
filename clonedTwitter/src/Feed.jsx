@@ -6,30 +6,24 @@ import db from './firebase';
 import TweetList from './TweetList';
 import FlipMove from "react-flip-move";
 import { ref, onValue } from "firebase/database";
+import {collection, getDocs} from 'firebase/firestore'
 
 function Feed() {
   const[posts, setPosts] = useState([]);
 
- /* useEffect(()=>{
-    db.posts('post').onSnapshot(snapshot => 
-      setPosts(snapshot.docs.map(doc => doc.data()))
-    )
-  }, []);*/
+ 
 
   useEffect(() => {
-    // Initialize Firebase Realtime Database
-    
-    const postRef = ref(db, "posts"); // Specify the path in the database
+    const fetchPosts = async () => {
+      const postsCollection = collection(db, "posts");
+      const snapshot = await getDocs(postsCollection);
+      const postsData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+      setPosts(postsData);
+    };
 
-    // Listen for data changes
-    const unsubscribe = onValue(postRef, (snapshot) => {
-      const data = snapshot.val(); // Get the data from the database
-      setPosts(data); // Update state with the data
-    });
-
-    // Cleanup subscription on component unmount
-    return () => unsubscribe();
+    fetchPosts();
   }, []);
+   
 
 
   return (  
@@ -40,18 +34,18 @@ function Feed() {
         <TweetInput/>
         <TweetList/>
         <FlipMove>
-        {posts.map((post) => (
-          <Tweet
-            key={post.text}
-            displayName={post.displayName}
-            username={post.username}
-            verified={post.verified}
-            text={post.text}
-            avatar={post.avatar}
-            
-          />
-        ))}
-        </FlipMove>
+      {posts.map((post) => (
+        <Tweet
+          key={post.id || post.text} // Use a unique key if available
+          displayName={post.displayName}
+          username={post.username}
+          verified={post.verified}
+          text={post.text}
+          image={post.image}
+          avatar={post.avatar}
+        />
+      ))}
+      </FlipMove>
         <Tweet/>
         <Tweet/>
         
@@ -64,7 +58,7 @@ function Feed() {
        
         
     </div>
-  )
+  );
 }
 
-export default Feed
+export default Feed;
