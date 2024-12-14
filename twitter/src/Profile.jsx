@@ -1,12 +1,17 @@
-import React from 'react'
+// Profile component: Profile.jsx
+import React, { useContext } from 'react';
+import { AppContext } from './App';
 
-function Profile() {
+const Profile = () => {
+  const { user } = useContext(AppContext);
+
   return (
-    <div>
-        
-      
+    <div className="profile">
+      <img src={user.profilePicture} alt={user.name} />
+      <h2>{user.name}</h2>
     </div>
-  )
-}
+  );
+};
 
-export default Profile
+export default Profile;
+

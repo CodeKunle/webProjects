@@ -1,12 +1,22 @@
-import React from 'react'
+// Header component: Header.jsx
+import React, { useContext } from 'react';
+import { AppContext } from './App';
 
-function Header() {
+const Header = () => {
+  const { theme, setTheme } = useContext(AppContext);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'light' ? 'dark' : 'light');
+  };
+
   return (
-    <div>
-        <h1>Home</h1>
-      
-    </div>
-  )
-}
+    <header className='feed-header'>
+      <h1>Twitter Clone</h1>
+      <button onClick={toggleTheme} className='theme-button'>
+        Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
+      </button>
+    </header>
+  );
+};
 
-export default Header
+export default Header;
