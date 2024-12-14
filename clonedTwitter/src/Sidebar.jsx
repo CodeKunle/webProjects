@@ -32,10 +32,11 @@ function Sidebar() {
         <SidebarOption Icon = {XIcon} text ="Premium"/>
         <SidebarOption Icon = {FlashOnOutlinedIcon} text ="Verified Orgs"/>
         <SidebarOption Icon = {PersonOutlineOutlinedIcon} text ="Profile"/>
+        
         <SidebarOption Icon = {PendingOutlinedIcon} text ="More"/>
         
 
-        <Button variant = "outlined" class = "post-button">Post</Button>
+        <Button type = "submit" class = "post-button">Post</Button>
 
 
 

@@ -8,11 +8,11 @@ import FlipMove from "react-flip-move";
 import { ref, onValue } from "firebase/database";
 import {collection, getDocs} from 'firebase/firestore'
 
+
+
+
 function Feed() {
-  const[posts, setPosts] = useState([]);
-
- 
-
+  const [posts, setPosts] = useState([]);
   useEffect(() => {
     const fetchPosts = async () => {
       const postsCollection = collection(db, "posts");
@@ -20,7 +20,6 @@ function Feed() {
       const postsData = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
       setPosts(postsData);
     };
-
     fetchPosts();
   }, []);
    
@@ -28,13 +27,13 @@ function Feed() {
 
   return (  
     <div className='feed'>
-      
+
         <Header className='feed-header'/>
       <div >
         <TweetInput/>
         <TweetList/>
         <FlipMove>
-      {posts.map((post) => (
+        {posts.map((post) => (
         <Tweet
           key={post.id || post.text} // Use a unique key if available
           displayName={post.displayName}
@@ -45,19 +44,16 @@ function Feed() {
           avatar={post.avatar}
         />
       ))}
-      </FlipMove>
+        </FlipMove>
         <Tweet/>
         <Tweet/>
-        
         <Tweet/>
         <Tweet/>
         <Tweet/>
       </div>  
-        
-        
-       
-        
+
     </div>
+  
   );
 }
 
