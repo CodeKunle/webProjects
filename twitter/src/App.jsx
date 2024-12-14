@@ -13,7 +13,7 @@ export const AppContext = createContext();
 
 const App = () => {
   const [tweets, setTweets] = useState([]);
-  const [user, setUser] = useState({ name: 'User', profilePicture: 'user.jpg' });
+  const [user, setUser] = useState({ name: '@waheed', profilePicture: ' ' });
   const [theme, setTheme] = useState('light');
 
   useEffect(() => {
@@ -32,12 +32,12 @@ const App = () => {
                <Sidebar />          
           </div>
                     
-          <div className='feed'>
-               <Header />                
+          <span className='feed'>
+               <Header  className="header"/>                
                <Profile />
                <TweetInput addTweet={addTweet} />
                <TweetList tweets={tweets} />                   
-          </div>
+          </span>
           <div class='widget'>                 
               <Widget/>
           </div>

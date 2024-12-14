@@ -33,7 +33,7 @@ const TweetInput = ({ addTweet }) => {
         value={tweet}
         onChange={(e) => setTweet(e.target.value)}
         placeholder="What's happening?"
-        style={{ marginBottom: '10px', display: 'block', width: '100%' }}
+        /*style={{ marginBottom: '10px', display: 'block', width: '100%' }}*/
         className='tweetInput'
       />
 
@@ -43,7 +43,7 @@ const TweetInput = ({ addTweet }) => {
         value={tweetImage}
         onChange={(e) => setTweetImage(e.target.value)}
         placeholder="Optional: Enter image URL"
-        style={{ marginBottom: '10px', display: 'block', width: '100%' }}
+        /*style={{ marginBottom: '10px', display: 'block', width: '60%' }}*/
         className='tweetInput'
       />
 

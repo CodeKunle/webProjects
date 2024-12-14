@@ -10,7 +10,7 @@ const Header = () => {
   };
 
   return (
-    <header className='feed-header'>
+    <header>
       <h1>Twitter Clone</h1>
       <button onClick={toggleTheme} className='theme-button'>
         Switch to {theme === 'light' ? 'Dark' : 'Light'} Mode
