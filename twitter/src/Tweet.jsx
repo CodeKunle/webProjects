@@ -22,7 +22,7 @@ const Tweet = ({ tweet }) => {
           src={tweet.image}
           alt="Tweet visual"
           style={{
-            maxWidth: '100%',
+            maxWidth: '50%',
             borderRadius: '10px',
             marginTop: '10px',
           }}

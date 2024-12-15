@@ -186,6 +186,21 @@ header > h1{
   
 }
 
+.profile-button{
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
+
+
+}
+
+.profile{
+  background-color: aqua;
+  border-radius: 10px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 15px;
+}
+
 .inputButton:hover{
     cursor: pointer;
     color: aliceblue;
