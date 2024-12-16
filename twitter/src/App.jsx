@@ -1,59 +1,4 @@
 
-// App component: App.jsx
-/*import React, { useState, useEffect, createContext } from 'react';
-import TweetInput from './TweetInput';
-import TweetList from './TweetList';
-import Sidebar from './Sidebar';
-import Header from './Header';
-import Profile from './Profile';
-import Widget from './Widget';
-import Avatar from '@mui/material/Avatar';
-import { deepOrange, deepPurple } from '@mui/material/colors';
-import './App.css';
-
-export const AppContext = createContext();
-
-const App = () => {
-  const [tweets, setTweets] = useState([]);
-  const [user, setUser] = useState({ name: '@waheed', profilePicture: 'https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js' });
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    // Fetch initial data from remote server, ex. https://jsonplaceholder.org/posts
-    // ...
-  }, []);
-
-  const addTweet = (tweet) => {
-    setTweets([tweet, ...tweets]);
-  };
-
-  // Function to toggle the profile view
-  const handleProfileClick = () => {
-    setShowProfile(!showProfile);
-  };
-
-  return (
-    <AppContext.Provider value={{ user, theme, setTheme }}>
-      <div className={`app ${theme}`}>
-          <div className='sidebar'>           
-               <Sidebar onProfileClick={handleProfileClick}/>          
-          </div>
-                    
-          <span className='feed'>
-               <Header  className="header"/>                
-               <Profile />
-               <TweetInput addTweet={addTweet} />
-               <TweetList tweets={tweets} />                   
-          </span>
-          <div class='widget'>                 
-              <Widget/>
-          </div>
-      </div>    
-    </AppContext.Provider>
-  );
-};
-
-export default App;*/
 
 
 import React, { useState, useEffect, createContext } from 'react';
@@ -71,7 +16,7 @@ const App = () => {
   const [tweets, setTweets] = useState([]);
   const [user, setUser] = useState({ 
     name: '@waheed', 
-    profilePicture: 'https://mui.com/material-ui/react-avatar/#system-ImageAvatars.js' 
+    profilePicture: 'https://i.pinimg.com/originals/62/ae/62/62ae6233a9a4c2ebc561916ed4a43ead.gif ' 
   });
   const [theme, setTheme] = useState('light');
   const [isProfileOpen, setIsProfileOpen] = useState(false); // State to toggle profile view
@@ -96,7 +41,7 @@ const App = () => {
   return (
     <AppContext.Provider value={{ user, theme, setTheme }}>
       <div className={`app ${theme}`}>
-        <div className="sidebar">
+        <div className="sidebar-container">
           <Sidebar onProfileClick={handleProfileClick} />
         </div>
 

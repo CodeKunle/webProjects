@@ -13,7 +13,7 @@ const Profile = ({ onBackToFeed }) => {
       <img 
         src={user.profilePicture} 
         alt={user.name} 
-        style={{ width: '100px', height: '100px', borderRadius: '50%' }} 
+        style={{ width: '200px', height: '200px', borderRadius: '50%' }} 
       />
       <h2>{user.name}</h2>
       <p><strong>Bio:</strong>  💡Web Developer at Heart |  🌍Finance & Sustainability Enthusiast |  Exploring the intersection of innovation and impact</p>

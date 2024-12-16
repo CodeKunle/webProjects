@@ -30,7 +30,7 @@ const Tweet = ({ tweet }) => {
       )}
 
       {/* Tweet Details */}
-      <small>By {tweet.author} on {new Date(tweet.date).toLocaleString()}</small>
+      <small>username {tweet.author} on {new Date(tweet.date).toLocaleString()}</small>
 
       {/* Tweet Interactions */}
       <TweetInteractions likes={likes} onLike={handleLike} />

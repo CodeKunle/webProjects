@@ -9,53 +9,8 @@
   
 }
 
-.sidebarOption{
-  display: flex;
-  justify-content: start;
-  width: 200px;
-  border-top: 40px;
-  align-items: center;
-  font-size: 14px;
-  cursor: pointer;
-}
 
-.sidebarOption:hover{
-  background-color: #eeebeb;
-  border-radius: 20px
-}
 
-.sidebarOption > .MuiSvgIcon-root {
-  padding: 10px;
-}
 
-.sidebarOption > h2 {
-  font-weight: 500;
-  font-size: 18px;
-  margin-right: 20px;
-}
 
-.sidebarOption--active{
-  color: black;
-  font-weight: 1000px;
-}
 
-/*Button Styling*/
-
-.button{
-  width: 170px;
-  height: 40px;
-  border-radius: 30px;
-  background-color: rgb(29, 155, 240);
-  border-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
-  font-weight: 800;
-  cursor: pointer;
-  float: left;
-  
-}
-
-.post-button{
-  background-color:rgb(29, 155, 240) ;
-  border-radius: 25px;
-  
-}

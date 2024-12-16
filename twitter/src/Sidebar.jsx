@@ -59,7 +59,7 @@ function Sidebar({ onProfileClick }) {
       /></button>
       <SidebarOption Icon={PendingOutlinedIcon} text="More" />
 
-      <Button type="submit" className="post-button">
+      <Button type="submit" class="post-button">
         Post
       </Button>
     </div>

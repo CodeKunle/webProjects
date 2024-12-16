@@ -3,7 +3,7 @@
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 10px;
+  padding: 0 1px;
   border: 3px solid gainsboro;
 }
 
@@ -43,7 +43,10 @@
     font-weight: bold;
     width: 190px;
     height: 40px;
+}
 
+.post-button:hover{
+  cursor: pointer;
 }
 
 .theme-button{
@@ -60,6 +63,8 @@
     display: flex;
     align-items: center;
     cursor: pointer;
+    margin-left: 10px;
+    
 }
 
 .sidebarOption:hover {
@@ -83,6 +88,7 @@
 }  
   
 .feed{
+    background-color: aqua;
     flex: 0.3;
     height: 100%;
     min-width: fit-content;
@@ -90,8 +96,8 @@
     overflow-y: scroll;
     padding-left: 20px;
     padding-right: 20ps;
-    margin-right: 80px;
-    margin-left: 30px;
+    margin-right: 5px;
+    margin-left: 5px;
     border: 3px solid gainsboro;
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */ 
@@ -102,20 +108,7 @@
     display: none;
   }
   
-  /* Hide scrollbar for IE, Edge and Firefox */
 
-/*.feed-header{
-    
-    position: sticky;
-    
-    z-index: 100;
-    background-color: white;
-    margin-bottom: 23px;
-    margin-left: auto;
-    text-align: center;
-    color: purple;
-    background-color: gray;
-}*/
 
 header{
 position: sticky;
@@ -144,19 +137,6 @@ header > h1{
     
 }
 
-/*Styling InputBox*/
-
-/*.tweetInput  {
-  display: flex;  
-  flex: 1;
-  margin-left: 20px;
-  font-size: 20px;
-  border: none;
-  
-}*/
-
-
-  
 .tweetInput {
     flex: 1;
     margin-left: 20px;
@@ -169,6 +149,9 @@ header > h1{
     border-radius: 5px;
     margin-left: 5px;
     margin-right: 20px;
+    padding-top: 10px;
+    margin-top: 18px;
+    
   
     
 }
@@ -182,8 +165,11 @@ header > h1{
   width: 90px;
   height: 25px ;
   margin-top: 10px ;
-  margin-left: 5px ;
-  
+  margin-left: 5px ; 
+}
+
+.tweetButton:hover{
+  cursor: pointer;
 }
 
 .profile-button{
@@ -195,127 +181,39 @@ header > h1{
 }
 
 .profile{
-  background-color: aqua;
+  background-color: rgb(225, 183, 105);
   border-radius: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 15px;
-}
-
-.inputButton:hover{
-    cursor: pointer;
-    color: aliceblue;
-    background-color: rgb(128, 128, 126);
-}
-
-.tweetBox-imageInput {
-    border-radius: 10px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid gray;
-    height: 25px;
+  width: 400px;
 }
 
 
-.tweetBox > form {
-    display: flex;
-    flex-direction: column;
-    
+.interaction-button{
+  background-color: rgb(237, 170, 193);
+  color: white;
+  width: 4em;
+  height: 2em;
+  margin-left: 1em;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px;
+  background-color: #d48080;
 }
 
-.tweet{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-    background-color: rgb(225, 221, 225);
-}
-
-.tweet-body {
-    flex: 1;
-    padding: 10px;
-}
-
-.tweet-body > img {
-    border-radius: 20px;
-    width: 100%;
-    
-}
-
-.tweet-headerText > h3{
-    font-size: 15px;
-    margin-bottom: 5px;
-}
-
-.tweet-headerDescription {
-    margin-bottom: 10px;
-    font-size: 15px;
-}
-
-.tweet-footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-    
-}
-
-.post-badge{
-    font-size: 8px;
-    color: rgb(0, 149, 255);
-
-}
-
-.tweet-span {
-    font-weight: 600;
-    font-size: 12px;
-    color: gray;
-    
-}
-
-.tweet-avatar {
-    padding: 10px;
-}
-
-.widget-input{
-    display: flex;
-    align-items: flex;
-    padding: 10px;
-    border-radius: 20px;
-    margin-top: 10px;
-    margin-right: 20px;
-}
-
-.widget-input > input{
-    border: none;
-    border-radius: 10px;
-    background-color: rgb(234, 241, 241);
-
-}
-
-.widgets-searchIcon {
-    color: gray;
-  }
+.search-input{
+  border-radius: 5px;
+  border-color: rgb(180, 224, 180);
+  margin-bottom: 5px;
   
-  .widgetContainer {
-    margin-top: 15px;
-    margin-left: 20px;
-    padding: 20px;
-    background-color: #f5f8fa;
-    border-radius: 20px;
-  }
+}
   
-  .widgetContainer > h2 {
-    font-size: 18px;
-    font-weight: 800;
-  }
 
 .profile img {
   border-radius: 50%;
 }
 
-.sidebar {
-  float: left;
-  width: 20%;
-}
+
 
 main {
   margin-left: 20%;
@@ -324,18 +222,23 @@ main {
 
 form {
   margin-bottom: 20px;
+  background-color: antiquewhite;
+  
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+  
 }
 
 ul li {
-  background: #f9f9f9;
+  /*background: #f9f9f9;*/
   margin-bottom: 10px;
   padding: 10px;
   border-radius: 5px;
+  background-color: #121212;
+  color: aqua;
 }
 
 

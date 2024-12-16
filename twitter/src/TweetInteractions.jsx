@@ -4,9 +4,9 @@ import React from 'react';
 const TweetInteractions = ({ likes, onLike }) => {
   return (
     <div>
-      <button onClick={onLike}>Like {likes}</button>
-      <button>Retweet</button>
-      <button>Reply</button>
+      <button onClick={onLike} className='interaction-button'>❤️ {likes}</button>
+      <button className='interaction-button'>⇅</button>
+      <button className='interaction-button'>💬</button>
     </div>
   );
 };

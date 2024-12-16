@@ -28,10 +28,7 @@ function Widget() {
       };
   return (
     <div className='widget'>
-      {/*<div className='widget-input'>
-        <SearchIcon className="widget-seachIcon"/>
-        <input placeholder='Search Twitter' type='text'/>
-      </div>*/}
+     
       <div>
       <h3>Search Users</h3>
 
@@ -43,8 +40,9 @@ function Widget() {
           value={searchTerm}
           onChange={(e) => setSearchTerm(e.target.value)}
           style={{ padding: '10px', width: '300px', marginRight: '10px' }}
+          className='search-input'
         />
-        <button onClick={handleSearch} style={{ padding: '10px 20px' }} ><SearchIcon className="widget-seachIcon"/>
+        <button onClick={handleSearch} /*style={{ padding: '10px 20px' }} */><SearchIcon className="search-button"/>
           
         </button>
       </div>
