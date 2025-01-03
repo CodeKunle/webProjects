@@ -15,16 +15,13 @@ export const AppContext = createContext();
 const App = () => {
   const [tweets, setTweets] = useState([]);
   const [user, setUser] = useState({ 
-    name: '@waheed', 
+    name: '@lynda', 
     profilePicture: 'https://i.pinimg.com/originals/62/ae/62/62ae6233a9a4c2ebc561916ed4a43ead.gif ' 
   });
   const [theme, setTheme] = useState('light');
   const [isProfileOpen, setIsProfileOpen] = useState(false); // State to toggle profile view
 
-  useEffect(() => {
-    // Fetch initial data from remote server, ex. https://jsonplaceholder.org/posts
-    // ...
-  }, []);
+  useEffect(() => { }, []);
 
   const addTweet = (tweet) => {
     setTweets([tweet, ...tweets]);
@@ -47,14 +44,14 @@ const App = () => {
 
         <span className="feed">
           <Header className="header" />
-          {/* Conditionally render Profile or Feed */}
+          {/* Conditionally render Profile */}
           {isProfileOpen ? (
-            <Profile onBackToFeed={handleBackToFeed} />
+          <Profile onBackToFeed={handleBackToFeed} />
           ) : (
-            <>
+          <>
               <TweetInput addTweet={addTweet} />
               <TweetList tweets={tweets} />
-            </>
+          </>
           )}
         </span>
 

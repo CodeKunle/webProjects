@@ -11,8 +11,11 @@ function Widget() {
     const [users] = useState([
         { id: 1, name: 'Kunle', tweet: 'Coding in React is very interesting', },
         { id: 2, name: 'Chiamaka', tweet: 'This is great!', },
-        { id: 3, name: 'Fatima', tweet: 'I love coding',}, ,
+        { id: 3, name: 'Fatima', tweet: 'I love coding',}, 
         { id: 4, name: 'Redi', tweet: 'Coding is interesting guys',},
+        {id: 5, name: 'gif', tweet:'https://i0.wp.com/wp-modula.com/wp-content/uploads/2018/12/gifgif.gif'},
+        {id: 6, name: 'gif2', tweet:'https://media.giphy.com/media/1k8O96NGH4lS8/giphy.gif'}
+
       ]);
     
       // State for search term and results
@@ -60,17 +63,14 @@ function Widget() {
       <div className="widgetContainer">
         <h2>What's happening</h2>
         <TwitterTweetEmbed tweetId={"1800282963051225268"}  />
-        <TwitterTweetEmbed tweetId2={"1848431364145877174"}/>
+        <TwitterTweetEmbed tweetId={"1848431364145877174"}/>
         <TwitterTimelineEmbed
           sourceType="profile"
           screenName="javaScript Daily"
           options={{ height: 400 }}
         />
 
-        <TwitterShareButton
-          url={"https://facebook.com/cleverprogrammer"}
-          options={{ text: "#reactjs is awesome", via: "cleverqazi" }}
-        />
+        
       </div>
     </div>
   );

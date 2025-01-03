@@ -20,9 +20,9 @@ const TweetInput = ({ addTweet }) => {
       date: new Date(),
     };
 
-    addTweet(newTweet); // Add the new tweet
-    setTweet(''); // Clear text input
-    setTweetImage(''); // Clear image input
+    addTweet(newTweet);      // Add the new tweet
+    setTweet('');            // Clear text input
+    setTweetImage('');       // Clear image input
   };
 
   return (

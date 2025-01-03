@@ -15,7 +15,7 @@ function MyCounter() {
         setCount(0);
     }
   return (
-    <div>
+    <div className='counter-container'>
         <p className='display'>{count}</p>
         <button className='count-button' onClick={increament}>Increament</button>
         <button className='count-button' onClick = {decreament}>Decreament</button>
