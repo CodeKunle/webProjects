@@ -5,16 +5,6 @@
     box-sizing: border-box;   
 }
 
-.body-clothing{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 16px;
-    background-color: lavenderblush;
-}
-
-.main-clothing{
-    background-color:  rgb(237, 192, 207);
-}
-
 .body-electronics{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -23,8 +13,51 @@
     padding-right: 10rem;
 }
 
+.body-clothing{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    background-color: lavenderblush;
+}
+
 .main-electronics{
-    background-color:  blue;
+    background-color:  blue;   
+}
+
+.main-clothing{
+    background-color:  rgb(237, 192, 207);
+}
+
+.sort-search{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.products--sorting, .search-input{
+    margin-top: 1.5rem;
+
+}
+
+.sort--dropdown, .search{
+    height: 1.5rem;
+    border-radius: 5px
+}
+
+.search-button{
+    background-color: aqua;
+    height: 1.5rem;
+    margin-top: rem;
+}
+
+/*product logo*/
+.logo-electronics{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    font-size: 10rem;
+    font-weight: bold;
+    color: blue;
 }
 
 .logo-clothing{
@@ -37,15 +70,6 @@
     color: purple;
 }
 
-.logo-electronics{
-    display: flex;
-    justify-content: center;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-    font-size: 10rem;
-    font-weight: bold;
-    color: blue;
-}
 
 div .nav-links ul{
     display: flex;
@@ -200,17 +224,12 @@ footer p{
     flex-wrap:wrap ;
     padding-left: 10rem;
     padding-right: 10rem;
-    
+    }
+
     /*scroll-margin-right*/  
 
-    } 
-    
     nav .menu-lists{
     display: block; 
-    
-    
-
-
     }
 
     ul li img{
@@ -359,10 +378,14 @@ label{
   }
   
   .modal-content {
-    background-color: #fff;
+    background-color: wheat;
+    border: 5px solid orange;
     margin: 15% auto;
+    color: brown;
+    border-radius: 10px;
     padding: 20px;
     width: 80%;
+    height: 40%;
     max-width: 500px;
   }
   

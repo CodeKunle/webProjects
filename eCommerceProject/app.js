@@ -152,9 +152,17 @@ document.addEventListener("DOMContentLoaded", () => {
       if (cart.length === 0) {
         cartItemsDiv.innerHTML = "<p>Your cart is empty.</p>";
       } else {
-        cartItemsDiv.innerHTML = "<ul>" + cart.map(product => `<li>${product.name} - $${product.price}</li>`).join('') + "</ul>";
+        cartItemsDiv.innerHTML = "<ul>" + 
+          cart.map(product => `
+            <li>
+              <img src="${product.image}" alt="${product.name}" width="50px" height="50px">
+              ${product.name} - $${product.price}
+            </li>
+          `).join('') + 
+        "</ul>";
       }
     }
+    
   
     // Event listener for "View Cart" button
     cartButton.addEventListener("click", () => {
